@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import {  useState } from "react";
 import OrderItem from "./OrderItem";
 import { observer } from "mobx-react-lite";
 import { TPizza } from "../App";

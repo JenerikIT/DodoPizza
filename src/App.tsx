@@ -39,7 +39,7 @@ export const App = observer(() => {
       />
       <Routes>
         <Route
-          path={"/" || "/Главная"}
+          path={"/"}
           element={
             <MainPages openDrawer={openDrawer} onClickDrawer={onClickDrawer} />
           }

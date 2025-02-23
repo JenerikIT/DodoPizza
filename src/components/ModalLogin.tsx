@@ -16,7 +16,7 @@ const ModalLogin = memo(
     SetModalLogin,
     ModalLoginBefore,
   }: Props) => {
-    console.log('ModalLogin')
+    console.log("ModalLogin");
     return (
       <div className={ModalLoginBefore ? "ModalLogin active" : "ModalLogin"}>
         <div className="modal-containerForm active">
@@ -32,7 +32,7 @@ const ModalLogin = memo(
               type="text"
               placeholder="введите пароль"
               value={valueNumber}
-              onChange={(e) => setValuePassword(e)}
+              onChange={(e) => setValuePassword(e.target.value)}
             />
             {valueNumber === password ? (
               <img src="./img/AgreeImg.svg" alt="" />

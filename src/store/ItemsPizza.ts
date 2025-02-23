@@ -29,7 +29,7 @@ class ItemsPizza {
       return sum + obj.count * obj.price;
     }, 0);
   };
-  addProduct = (obj: TPizza) => {
+  addProduct = (obj: any) => {
     const findItems = this.itemsCart.find(({ name }) => name === obj.name);
     runInAction(() => {
       if (!findItems) {

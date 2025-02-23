@@ -27,9 +27,9 @@ const Header = observer(({ setOpenDrawer }: Props) => {
     setActiveSearch(i);
   }, []);
   const { pathname } = useLocation();
-  const [valueNumber, setValuePassword] = useState<string>("");
+  const [valueNumber, setValuePassword] = useState("");
   const onClickValueNumber = useCallback((e: any) => {
-    setValuePassword(e.target.value);
+    setValuePassword(e);
   }, []);
   const [onMove, SetOnMove] = useState(false);
   const arrayChandeEnter = ["Главная", "Заказы"];

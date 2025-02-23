@@ -25,9 +25,9 @@ const MyForm = observer(({}: any) => {
       [id]: value,
     });
   };
-  const inputRef = useRef();
+  const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => {
-    inputRef.current.focus();
+    inputRef.current?.focus();
   }, []);
   return (
     <>

@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import Card from "../components/Card";
 import { observer } from "mobx-react-lite";
 import pizzaStore from "../store/FetchPiiza";
-import { Route, Routes } from "react-router-dom";
-
 export const Home = observer(({}) => {
   const { FetchPizza, itemsPizza, loading } = pizzaStore;
   useEffect(() => {
@@ -12,7 +10,7 @@ export const Home = observer(({}) => {
   return (
     <div className="Product-List">
       {!loading && itemsPizza
-        ? itemsPizza.map(({ items, title }, index) => {
+        ? itemsPizza.map(({ items, title }: any, index) => {
             return <Card title={title} items={items} categoryId={index} />;
           })
         : [...new Array(4)].map((obj) => (

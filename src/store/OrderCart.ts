@@ -17,7 +17,7 @@ class OrderCart {
       this.items = JSON.parse(itemsOrder);
     }
   };
-  addCartOrder = (item: TPizza) => {
+  addCartOrder = (item: any) => {
     this.items.push(item);
     if (this.items.length > 5) {
       this.items = [];

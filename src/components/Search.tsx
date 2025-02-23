@@ -2,7 +2,7 @@ import Value from "../store/Value";
 import CardSearch from "./CardSearch";
 import { observer } from "mobx-react-lite";
 import { TPizza } from "../App";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import pizzaStore from "../store/FetchPiiza";
 
 type Props = {
@@ -16,9 +16,9 @@ const Search = observer(({ activeSearch, onClickActiveSearch }: Props) => {
   useEffect(() => {
     FetchPizza();
   }, []);
-  const inputRef = useRef();
-  const handleClick = (e) => {
-    inputRef.current.focus();
+  const inputRef = useRef<HTMLInputElement>(null);
+  const handleClick = () => {
+    inputRef.current?.focus();
   };
   return (
     <>
@@ -37,7 +37,7 @@ const Search = observer(({ activeSearch, onClickActiveSearch }: Props) => {
           />
           {activeSearch && (
             <div className="group-Card-search">
-              {itemsPizza.map(({ items }) =>
+              {itemsPizza.map(({ items }: any) =>
                 items
                   .filter((item: any) =>
                     item.name
