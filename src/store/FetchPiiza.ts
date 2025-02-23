@@ -11,7 +11,9 @@ class PizzaStore {
   FetchPizza = async () => {
     this.loading = true; // Устанавливаем loading в true
     try {
-      const { data } = await axios.get("http://localhost:3700/0");
+      const { data } = await axios.get(
+        "https://674231a5e464749900900a7b.mockapi.io/ItemsPizza"
+      );
       runInAction(() => {
         this.itemsPizza = data; // Изменение состояния в runInAction
         this.loading = false; // Устанавливаем loading в false

@@ -31,7 +31,7 @@ const Header = observer(({ setOpenDrawer }: Props) => {
   const onClickValueNumber = useCallback((e: any) => {
     setValuePassword(e);
   }, []);
-  const [onMove, SetOnMove] = useState(false);
+  const [onMove, SetOnMove] = useState(true);
   const arrayChandeEnter = ["Главная", "Заказы"];
   const [onSlectChange, setOnSelectChange] = useState(0);
   const [ModalLoginBefore, SetModalLogin] = useState(false);

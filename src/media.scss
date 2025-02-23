@@ -17,7 +17,6 @@
     padding-top: 40px;
     .categoryDodo {
       position: absolute;
-      width: 330px;
       overflow-x: scroll;
       display: flex;
       align-items: center;
@@ -773,8 +772,8 @@
     .sort
     .category
     .categoryDodo {
-    width: 200px;
-    scrollbar-width: auto;
+    width: 250px;
+    scrollbar-width: thin;
   }
   body .wrapper .DRAWER .container-drawer .group-items .cart .info {
     .description {
@@ -796,12 +795,23 @@
     }
   }
   body .Empty__Home {
-strong{
-  margin: 0 auto;
-}
-    img{
+    strong {
+      margin: 0 auto;
+    }
+    img {
       width: 80vw;
       margin: 0 auto;
     }
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .priceBy
+    .input-price
+    input {
+    width: 50vw;
   }
 }

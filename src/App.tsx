@@ -14,7 +14,7 @@ export type TPizza = {
   id?: number;
   name: string;
   description: string;
-  price: number[] | any;
+  price?: number[] | any;
   category?: number;
   imgUrl: string;
   count?: number | any;
@@ -22,7 +22,7 @@ export type TPizza = {
 };
 
 export const App = observer(() => {
-  const [openDrawer, setOpenDrawer] = useState(false);
+  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
   const onClickDrawer = useCallback((i: boolean) => {
     setOpenDrawer(i);
   }, []);

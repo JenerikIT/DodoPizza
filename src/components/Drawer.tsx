@@ -2,6 +2,7 @@ import { observer } from "mobx-react-lite";
 import ItemsPizza from "../store/ItemsPizza";
 import Cart from "./Cart";
 import { Link } from "react-router-dom";
+import { TPizza } from "../App";
 
 type Props = {
   openDrawer: boolean;
@@ -37,7 +38,7 @@ const Drawer = observer(({ openDrawer, onClickDrawer }: Props) => {
         </div>
         <div className="group-items">
           {itemsCart.length ? (
-            itemsCart.map((obj: any) => <Cart {...obj} key={obj.id} />)
+            itemsCart.map((obj: TPizza) => <Cart {...obj} key={obj.id} />)
           ) : (
             <div className="Empty">
               <img

@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import Value from "../store/Value";
 import { observer } from "mobx-react-lite";
-const MyForm = observer(({}: any) => {
+
+const MyForm = observer(({}) => {
   const { ValueIsTrue, trueValue } = Value;
   const [formData, setFormData] = useState({
     userName: "",
@@ -18,7 +19,7 @@ const MyForm = observer(({}: any) => {
       ? true
       : false;
   ValueIsTrue(isTrueForm);
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
     setFormData({
       ...formData,
@@ -102,12 +103,3 @@ const MyForm = observer(({}: any) => {
 });
 
 export default MyForm;
-
-// const [formData, setFormData] = useState<any>([
-//     { userName: "", email: "", serName: "", number: "", address: "" },
-//   ]);
-//   const handleChangeInput = (e) => {
-//     const { name, value } = e.target;
-//     console.log(name, value);
-//     setFormData({ ...formData, [name]: value });
-//   };
