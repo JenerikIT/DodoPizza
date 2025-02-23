@@ -739,6 +739,7 @@
     }
   }
   body .modal-container .modal {
+    overflow-x: hidden;
     width: max-content;
     display: flex;
     flex-direction: column;
@@ -747,6 +748,12 @@
     border-radius: 0px;
     overflow-y: scroll;
     position: relative;
+    .imgModal {
+      img {
+        width: 220px;
+        height: 220px;
+      }
+    }
   }
   body .wrapper header .container-header .search form .group-Card-search {
     display: flex;
@@ -772,17 +779,16 @@
     .sort
     .category
     .categoryDodo {
-    width: 250px;
+    width: 80vw;
     scrollbar-width: thin;
   }
   body .wrapper .DRAWER .container-drawer .group-items .cart .info {
     .description {
       margin-bottom: 10px;
-      font-size: 14px;
+      font-size: 13px;
       width: 150px;
-      height: 100px;
       overflow: scroll;
-      scrollbar-width: thin;
+      scrollbar-width: none;
     }
     strong {
       font-size: 15px;
@@ -813,5 +819,26 @@
     .input-price
     input {
     width: 50vw;
+  }
+  body
+    .modal-container
+    .modal
+    .pizzaSorted
+    .containerAdd
+    .choose
+    .group-choose
+    .item {
+    .iconSous {
+      height: 90px;
+    }
+    .modalPricePizza {
+      padding-bottom: 10px;
+    }
+  }
+  body .modal-container .modal svg {
+    position: absolute;
+    top: 20px;
+    width: 18px;
+    height: 18px;
   }
 }

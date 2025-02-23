@@ -14,7 +14,7 @@ const SousItem = ({ name, img, price }: TSous) => {
       ) : (
         <div className="blockAgree"></div>
       )}
-      <img src={img} width={120} height={120}></img>
+      <img src={img} width={120} height={120} className="iconSous"></img>
       <span>{name}</span>
       <strong className="modalPricePizza">{price} ₽</strong>
     </div>
