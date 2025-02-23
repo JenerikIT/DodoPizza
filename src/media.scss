@@ -1,0 +1,807 @@
+@media (max-width: 1400px) {
+  //modalCard
+  color:var(--text-color) body .modal-container {
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80vh;
+    width: 100vw;
+    .modal {
+      width: max-content;
+      height: 500px;
+      overflow-y: scroll;
+    }
+  }
+  body .wrapper .container-main .main-category__container .sort .category {
+    padding-top: 40px;
+    .categoryDodo {
+      position: absolute;
+      width: 330px;
+      overflow-x: scroll;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px;
+      gap: 35px;
+      transition: 0.3sease-in-out;
+    }
+    .imgDodo {
+      display: none;
+    }
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card
+    p {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    overflow: scroll;
+    color: #b1b1b1;
+    scrollbar-width: none;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card
+    strong {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  body .modal-container .modal .imgModal {
+    height: max-content;
+    display: flex;
+    margin-top: 50px;
+  }
+  body
+    .modal-container
+    .modal
+    .pizzaSorted
+    .containerAdd
+    .choose
+    .group-choose {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .parmizan {
+      width: 100%;
+      .item {
+        width: 90%;
+      }
+    }
+  }
+  body .modal-container .modal .pizzaSorted .container-size {
+    ul {
+      width: 100%;
+      gap: 0;
+    }
+  }
+  body .wrapper {
+    border-radius: 0;
+  }
+
+  body .wrapper header .container-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  body .wrapper .container-main .main-Home .Product-List .Product .group-card {
+    grid-template-columns: repeat(2, 1fr); /* Используем 1fr для гибкости */
+    column-gap: 2.5%; /* Используем проценты для адаптивности */
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card
+    .ProductImg {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  body .wrapper .container .formOrder .group-Product {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  body .wrapper .container .formOrder .group-Product .resultPrice {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    flex-direction: row;
+  }
+
+  body .wrapper .container .formOrder .group-Product .resultPrice .buttonPrice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .resultPrice
+    .buttonPrice
+    button {
+    padding: 8px 10px;
+  }
+  body .modal-container .modal {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  body
+    .modal-container
+    .modal
+    .pizzaSorted
+    .containerAdd
+    .choose
+    .group-choose
+    .item {
+    width: 100%;
+    height: max-content;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  body .wrapper .container-main .main-Home {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  body .wrapper .container-main .main-Home .Product-List .Product .group-card {
+    grid-template-columns: repeat(
+      1,
+      300px
+    ); /* Изменено на 1 колонку для мобильных устройств */
+    column-gap: 50px;
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+      .ProductImg {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  body .wrapper .container-main .main-Home .Product-List .Product .group-card {
+    grid-template-columns: repeat(2, 300px); /* Для более широких экранов */
+  }
+
+  body .wrapper .container-main .main-Home .filter .item .defaultIcon,
+  .iconFilter {
+    width: 19px;
+    height: 17px;
+    border-radius: 5px;
+  }
+
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .ingridient
+    ul {
+    overflow-x: scroll;
+    width: 70%;
+    scrollbar-width: thin;
+    padding-bottom: 20px;
+  }
+
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .ingridient
+    span {
+    margin: 0;
+    font-size: 15px;
+    width: max-content;
+  }
+
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .priceBy
+    .input-price
+    input {
+    outline: none;
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 10px;
+    padding-right: 0; /* Удалено лишнее значение */
+    font-size: 16px;
+  }
+
+  body .wrapper .order .group {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 800px) {
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .ingridient
+    ul {
+    overflow-x: scroll;
+    width: 70%;
+    padding-bottom: 20px;
+  }
+
+  body .wrapper .container-main .main-Home .filter .item .defaultIcon,
+  .iconFilter {
+    width: 17px;
+    height: 15px;
+    border-radius: 5px;
+  }
+
+  body .wrapper .container-main .main-Home .filter__items .button {
+    width: 60%;
+    p {
+      font-size: 17px;
+    }
+  }
+
+  body .wrapper .container-main .main-Home .Product-List .Product .group-card {
+    grid-template-columns: repeat(1, 1fr); /* Используем 1fr для гибкости */
+    column-gap: 5%; /* Используем проценты для адаптивности */
+    row-gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body .wrapper .container .formOrder .group-Product .product {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    border: 1px solid rgba(161, 161, 161, 0.5);
+    box-shadow: 0px 0px 1px 0px black;
+    padding: 20px 25px;
+    border-radius: 25px;
+  }
+
+  body .wrapper .container .formOrder .group-Product .resultPrice {
+    width: 100%;
+  }
+
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .product__content
+    .item__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    user-select: none;
+  }
+
+  body .wrapper .container .formOrder .group-Product .product__content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .product__content
+    .item
+    .container-total {
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 1px solid rgb(170, 164, 164);
+    border-radius: 22px;
+  }
+
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .product__content
+    .item
+    .price {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  body .wrapper .container-main .main-Home .filter {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 100px;
+  }
+  body .modal-container .modal .pizzaSorted .container-size ul {
+    width: 100%;
+    gap: 0;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    .type {
+      overflow-x: scroll;
+      scrollbar-width: none;
+    }
+  }
+  body .modal-container {
+    .modal {
+      width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      height: 600px;
+      overflow-y: scroll;
+      position: relative;
+      svg {
+        position: absolute;
+        top: 20px;
+      }
+    }
+  }
+  body .cardMore {
+    width: 80vw;
+    &__main {
+      .content {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .imgModal {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card {
+    strong {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  body .wrapper .order .group .card .resultPrice {
+    span {
+      font-size: 17px;
+    }
+    strong {
+      font-size: 17px;
+    }
+  }
+  body .wrapper header .container-header .containerRight {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  body .wrapper header .container-header .search form {
+    height: 40px;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card
+    .ProductImg {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+  }
+  body .wrapper header .container-header .search form {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    background-color: #f6640f;
+    gap: 10px;
+    font-size: 0px;
+    border-radius: 18px;
+    position: relative;
+  }
+  body .wrapper .container-main .main-category__container .sort {
+    .category {
+      width: 97%;
+      ul {
+        overflow-x: scroll;
+        width: 100%;
+        scrollbar-width: none;
+      }
+    }
+  }
+  body .wrapper header .container-header .containerRight .button {
+    padding: 12px;
+    border: 1px solid #fe5f00;
+    border-radius: 20px;
+    color: #fe5f00;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  body .wrapper .container .formOrder .group-Product .product {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 20px 25px;
+    margin: 0 auto;
+  }
+
+  body .wrapper .container {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  body .wrapper header .container-header .containerRight .button {
+    padding: 12px;
+    border: 1px solid #fe5f00;
+    border-radius: 20px;
+    color: #fe5f00;
+    font-size: 16px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3sease-in-out;
+  }
+
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product
+    .group-card
+    .card
+    .modal-container {
+    position: fixed;
+    right: 0;
+    pointer-events: all;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .priceBy
+    .input-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #f1efef;
+  }
+  body .wrapper .container-main .main-Home .Product-List {
+    margin-left: 0px;
+  }
+  body .wrapper .container-main .main-Home {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .filter__items
+    .container-filter
+    .priceBy
+    .input-price {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  body .wrapper header .container-header .search {
+    width: 100%;
+    z-index: 4;
+  }
+  body .wrapper .DRAWER .container-drawer {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3sease;
+    transform: translateX(100%);
+  }
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .product
+    form
+    .group-input {
+    display: grid;
+    justify-content: space-between;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+  }
+  body .wrapper .container .formOrder .group-Product .product__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  body
+    .wrapper
+    .container
+    .formOrder
+    .group-Product
+    .product__content
+    .item
+    .container-total {
+    margin-top: 20px;
+    padding: 8px 15px;
+    border: 1px solid #fe5f00;
+    border-radius: 22px;
+  }
+  body .wrapper .order .group .card .title {
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+    .info-status {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      .state {
+        font-size: 15px;
+      }
+      .statusImg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    strong {
+      font-size: 17px;
+    }
+    .number .description {
+      font-size: 14px;
+    }
+  }
+  body .wrapper .order .group {
+    padding-bottom: 8px;
+  }
+  body .wrapper .order .wrap {
+    width: 0px;
+  }
+  body .wrapper .order .group.active {
+    transition: all 0.3sease-in-out;
+    overflow-y: visible;
+    height: 90px;
+  }
+  body
+    .wrapper
+    .order
+    .group
+    .card
+    .items
+    .item
+    .productInfo
+    .info
+    .description {
+    color: #a1a1a1;
+    font-size: 12px;
+  }
+  body .wrapper .order .group .card .items .item .productInfo {
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 5px;
+  }
+  body .wrapper .container-main .main-Home .filter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 100px;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-Home
+    .Product-List
+    .Product:nth-child(1)
+    h1 {
+    margin-top: 60px;
+    font-size: 25px;
+  }
+  body
+    .wrapper
+    header
+    .container-header
+    .containerRight
+    .ModalLogin
+    .modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 50%;
+    height: max-content;
+    padding: 40px;
+    border-radius: 20px;
+    .top-modal {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .inputLogin {
+      margin-bottom: 15px;
+      input {
+        font-size: 15px;
+      }
+    }
+    .button {
+      font-size: 15px;
+    }
+  }
+  body .modal-container .modal .imgModal {
+    height: max-content;
+    display: flex;
+    margin-top: 50px;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  body
+    .modal-container
+    .modal
+    .pizzaSorted
+    .containerAdd
+    .choose
+    .group-choose {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  body .modal-container .modal {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 90vh;
+    border-radius: 0px;
+    overflow-y: scroll;
+    position: relative;
+  }
+  body .wrapper header .container-header .search form .group-Card-search {
+    display: flex;
+    width: 90%;
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    position: absolute;
+    overflow-y: scroll;
+    scrollbar-width: auto;
+    left: 0;
+    background-color: white;
+    top: 60px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  body
+    .wrapper
+    .container-main
+    .main-category__container
+    .sort
+    .category
+    .categoryDodo {
+    width: 200px;
+    scrollbar-width: auto;
+  }
+  body .wrapper .DRAWER .container-drawer .group-items .cart .info {
+    .description {
+      margin-bottom: 10px;
+      font-size: 14px;
+      width: 150px;
+      height: 100px;
+      overflow: scroll;
+      scrollbar-width: thin;
+    }
+    strong {
+      font-size: 15px;
+    }
+    .price {
+      .total img {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+  body .Empty__Home {
+strong{
+  margin: 0 auto;
+}
+    img{
+      width: 80vw;
+      margin: 0 auto;
+    }
+  }
+}
