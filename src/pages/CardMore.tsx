@@ -20,9 +20,7 @@ const CardMore = observer(({}) => {
           .map(({ name, imgUrl, price, description }: TPizza) => (
             <div className={`cardMore`} key={name}>
               <div className="cardMore__main">
-                <div className="imgModal">
-                  <img src={imgUrl} width={250} height={250} alt="" />
-                </div>
+                <img src={imgUrl} width={250} height={250} alt="" />
                 <div className="content">
                   <div className="top">
                     <span className="titleModalCard">{name}</span>
