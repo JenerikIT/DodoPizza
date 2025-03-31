@@ -10,7 +10,6 @@ import Order from "./pages/Order";
 import OrderForm from "./pages/OrderForm";
 import CardMore from "./pages/CardMore";
 import Theme from "./store/Theme";
-import axios from "axios";
 export type TPizza = {
   id?: number;
   name: string;
